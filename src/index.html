@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/bower.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <title></title>
+    <style>
+      #toast-container {
+        z-index: 999 !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    <a id="back-to-top" class="back-to-top">Back to Top</a>
+    <div class="wrapper">
+      <div class="header">
+        <div class="header__top"></div>
+        <div class="container tittle__headerContainer">
+          <div class="tittle__header">
+            <h1 class="h1__text neon"></h1>
+          </div>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="container header__bottomContainer">
+          <nav class="navbarHeader__bottom">
+            <div class="navbar__headerLogo">
+              <button type="button" class="navbar__btn">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="glyphicon glyphicon-remove open__icon"></span>
+              </button>
+            </div>
+            <div class="navbar__menuHeader">
+              <ul class="nav__menu">
+                <li>
+                  <a href="#work"><span>work</span></a>
+                </li>
+                <li>
+                  <a href="#news"><span>news</span></a>
+                </li>
+                <li>
+                  <a href="#bio"><span>bio</span></a>
+                </li>
+                <li>
+                  <a href="#contact"><span>contact</span></a>
+                </li>
+              </ul>
+              <ul class="nav__icons">
+                <li>
+                  <a
+                    target="”_blank”"
+                    href="https://www.linkedin.com/in/taras-ostasha-233b46121/"
+                    ><i class="fab fa-linkedin"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    target="”_blank”"
+                    href="https://www.facebook.com/taras.ostasha"
+                    ><i class="fab fa-facebook"></i
+                  ></a>
+                </li>
+                <li>
+                  <a target="”_blank”" href="https://github.com/TarasOstasha"
+                    ><i class="fab fa-github-square"></i
+                  ></a>
+                </li>
+                <li>
+                  <a target="”_blank”" href="https://twitter.com/Tony_Joss"
+                    ><i class="fab fa-twitter-square"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div id="work" class="portfolio">
+      <div class="portfolio__tittle">
+        <h2 class="h2__text">gallery portfolio /</h2>
+        <span>Below You Can Find Some Of My Work</span>
+      </div>
+      <div class="container container__portfolio"></div>
+    </div>
+    <div class="lorem"></div>
+    <div class="poem"></div>
+    <div id="news" class="news"></div>
+    <div id="bio" class="biographia"></div>
+    <footer>
+      <div id="contact" class="contact">
+        <div class="mail">
+          <a
+            class="btn btn-primary btn-lg btnMail"
+            data-toggle="modal"
+            data-target="#myModal"
+            href="#"
+          >
+            <span class="up-head-word">tonyjoss1990@gmail.com</span></a
+          >
+          <!--settings modal window bootstrap-->
+          <div
+            class="modal fade"
+            id="myModal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="myModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title h4__text" id="myModalLabel">
+                    Please leave your contacts and I will callback you ASAP
+                  </h4>
+                </div>
+                <div class="modal-body">
+                  <form
+                    class="form_s center-block"
+                    id="form-site"
+                    name="contact-form"
+                  >
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        name="name"
+                        class="form-control inputlogin"
+                        required="required"
+                        placeholder="Name"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        name="email"
+                        class="form-control inputlogin"
+                        required="required"
+                        placeholder="E-mail"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        name="phone"
+                        class="form-control inputlogin"
+                        required="required"
+                        placeholder="Phone"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <textarea
+                        name="proposition"
+                        id="contact-form-textarea"
+                        class="form-control"
+                        placeholder="Leave Your Message Here"
+                        cols="30"
+                        rows="10"
+                      ></textarea>
+                    </div>
+                    <button
+                      id="btnClosePopup"
+                      type="submit"
+                      class="btn btn-primary btn-block sendbtn"
+                    >
+                      Send a request
+                    </button>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-default closeBtn"
+                    data-dismiss="modal"
+                  >
+                    close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--<button type="button" class="terug" id="callbutton">tonyjoss1990@gmail.com</button>-->
+        </div>
+        <div class="adress">10 Arlington Avenue, Clifton, NJ, 07011</div>
+        <div class="right">@Copyright 2017 All Right Reserved by</div>
+      </div>
+    </footer>
+    <!-- <script> src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"</script> -->
+    <script src="js/bower.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/fontawesome.min.js"></script>
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+  </body>
+</html>

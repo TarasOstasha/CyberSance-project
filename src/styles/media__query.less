@@ -1,0 +1,305 @@
+/* SMARTPHONES (portrait and landscape) ----------- */
+@media only screen and (max-width: 480px) {
+  .row {
+    margin: 0;
+    padding: 0;
+  }
+  .tittle__header, .logo {
+    //display: none;
+  }
+  .logo {
+    padding-left: 15px;
+  }
+  .header__bottomContainer {
+    margin: 0 auto;
+    display: flex;
+    align-items: center
+  }
+  .navbar__btn {
+    .open__icon {
+      position: absolute!important;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(135deg);
+      transition: transform 0.5s;
+    }
+    display: block;
+    padding-right: 15px;
+    position: absolute;
+    transform: translate(-50%, 50%);
+    right: 0;
+    //top: 7px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 30px;
+    z-index: 2;
+    //width: 30px;
+    //height: 30px;
+  }
+  .navbar__btnOpen {
+    .open__icon {
+      transform: rotate(0) translate(-50%, -50%) ;
+    }
+  }
+  .navbarHeader__bottom {
+    min-height: 45px;
+    height: auto;
+    position: relative;
+  }
+  .navbar__headerLogo {
+    display: flex;
+    align-items: center;
+    /* height: 100%; */
+    width: 100%;
+    
+  }
+  .nav__menu {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    &:before {
+      display: none;
+    }
+  }
+  .nav__menu li {
+    &:first-child {
+      //margin-top: 5em;
+    }
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding-left: 15px;
+  }
+  .navbar__menuHeader {
+    max-height: 0;
+    height: 100%;
+    width: 100%;
+    //padding: 10px;
+    transition: .5s,.5s,.5s max-height, right, opacity;
+    overflow: hidden;
+    opacity: 0;
+    position: relative;
+    //right: -1000px; якщо зробити появлення блоку з права тоді появляється скрол//
+  }
+  .open__menuHeader {
+    max-height: 900px!important;
+    right: 0;
+    opacity: 1;
+  }
+  .nav__icons {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    text-align: justify;
+    font-size: 0;
+    margin: 20px 0;
+    padding: 0 10px;
+    &:after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+    }
+  }
+ //portfolio
+  .socialImg__icons {
+    padding: 0 5px;
+    bottom: -20px;
+    &:after {
+      content: '';
+      width: 100%;
+      display: inline-block;
+    }
+  li {
+    padding: 0;
+  }
+    img {
+      width: 10px;
+
+    }
+  }
+  .img__searchHover {
+    width: 20px;
+  }
+
+ //lorem
+ .lorem {
+   height: 400px;
+ }
+  .poem {
+    font-size: 8px;
+    span {
+      font-size: 10px;
+    }
+  }
+  .crawl {
+    position: relative;
+    top: 9999px;
+    transform-origin: 50% 100%;
+    animation: crawl 60s linear infinite;
+  }
+  .what-i-do {
+    font-size: 50px;
+    line-height: 1.5;
+  }
+  .star-wars {
+    height: 200px;
+  }
+ //news
+  .tags__column {
+    margin-bottom: 30px;
+  }
+
+//brands
+  .list__brands li {
+    display: block;
+    padding: 20px;
+    text-align: center;
+  }
+//bio
+  .tittle__abouteMe {
+    text-align: center;
+  }
+  .col__tittleAbouteMe {
+    margin-bottom: 40px;
+  }
+  .social-link {
+    .social-svg {
+      //width: 4.8rem;
+      width: 4em;
+      height: 4em;
+    }
+  }
+  .wrapper__links {
+    width: 100%!important;
+    justify-content: space-evenly;
+  }
+  .additional__info {
+    display: none;
+  }
+ 
+
+//footer
+  .mail {
+    .btnMail {
+      padding: 15px 30px;
+      font-size: 20px;
+    }
+  }
+  .info__namber {
+    font-size: 40px;
+    a {
+      color: white;
+    }
+  }
+  .adress {
+    font-size: 20px;
+  }
+  .right {
+    font-size: 12px;
+  }
+}
+//481 to 991 px
+@media screen and (max-width: 991px) and (min-width: 481px) {
+  .row {
+    margin: 0;
+  }
+  .navbar__btn {
+    display: none;
+  }
+  .tittle__header {
+    //display: none;
+  }
+  .nav__icons {
+    display: none;
+  }
+  .socialImg__icons {
+    padding: 0 5px;
+    bottom: -20px;
+    &:after {
+      content: '';
+      width: 100%;
+      display: inline-block;
+    }
+    li {
+      padding: 0;
+    }
+    img {
+      width: 10px;
+
+    }
+  }
+  .navbar__menuHeader {
+    justify-content: flex-end;
+  }
+  .img__searchHover {
+    width: 20px;
+  }
+  .poem {
+    top: 30%;
+  }
+  .tags__column {
+    padding: 0 15px;
+  }
+  .brands__store {
+    padding: 0 20px;
+  }
+  .tittle__abouteMe {
+    text-align: center;
+  }
+  .biography__story {
+    margin-bottom: 30px;
+    padding: 0 10px;
+  }
+  .info__namber {
+    font-size: 40px;
+  }
+  .mail {
+    .btnMail {
+      font-size: 40px;
+      padding: 20px 40px;
+    }
+  }
+  // .social-link {
+  //   .social-svg {
+  //     width: 1.8rem;
+  //   }
+  // }
+}
+
+////771 to 831px
+//@media screen and (max-width: 831px) and (min-width: 771px) {}
+////from 832px to 931px
+//@media screen and (max-width: 931px) and (min-width: 832px) {}
+//this is options for ipad
+@media screen and (max-width: 1100px) and (min-width: 992px) {
+  //header
+  .navbar__btn {
+    display: none;
+  }
+  //lorem
+  .poem {
+    top: 30%;
+  }
+  // .social-link {
+  //   .social-svg {
+  //     width: 1.8rem;
+  //   }
+  // }
+}
+@media (min-width: 1101px){
+  .navbar__btn {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1101px) {
+  // .social-link {
+  //   .social-svg {
+  //     width: 1.8rem;
+  //   }
+  // }
+}
+////1101 to 1365px
+//@media screen and  (max-width: 1365px) and (min-width: 1101px) {}
+// from 1366px to ALL
+//@media (min-width: 1366px){};
