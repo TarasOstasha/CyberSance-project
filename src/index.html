@@ -28,81 +28,95 @@
 
   <body>
     <a id="back-to-top" class="back-to-top">Back to Top</a>
-    <div class="wrapper">
-      <div class="header">
-        <div class="header__top"></div>
-        <div class="container tittle__headerContainer">
-          <div class="tittle__header">
-            <h1 class="h1__text neon"></h1>
-          </div>
-        </div>
-      </div>
-      <div class="header__bottom">
-        <div class="container header__bottomContainer">
-          <nav class="navbarHeader__bottom">
-            <div class="navbar__headerLogo">
-              <button type="button" class="navbar__btn">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="glyphicon glyphicon-remove open__icon"></span>
+    <main class="wrapper">
+      <div class="container">
+        <header>
+          <nav class="navbar navbar-expand-lg nav">
+            <div class="container-fluid">
+              <!-- Logo -->
+              <a class="navbar-brand" href="#" aria-label="Go to Home Page"
+                >
+                <img class="logo-img" src="images/cybersance_logo_screen.png" alt="logo">
+                </a
+              >
+
+              <!-- Hamburger Menu for Mobile -->
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
               </button>
-            </div>
-            <div class="navbar__menuHeader">
-              <ul class="nav__menu">
-                <li>
-                  <a href="#work"><span>work</span></a>
-                </li>
-                <li>
-                  <a href="#news"><span>news</span></a>
-                </li>
-                <li>
-                  <a href="#bio"><span>bio</span></a>
-                </li>
-                <li>
-                  <a href="#contact"><span>contact</span></a>
-                </li>
-              </ul>
-              <ul class="nav__icons">
-                <li>
-                  <a
-                    target="”_blank”"
-                    href="https://www.linkedin.com/in/taras-ostasha-233b46121/"
-                    ><i class="fab fa-linkedin"></i
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    target="”_blank”"
-                    href="https://www.facebook.com/taras.ostasha"
-                    ><i class="fab fa-facebook"></i
-                  ></a>
-                </li>
-                <li>
-                  <a target="”_blank”" href="https://github.com/TarasOstasha"
-                    ><i class="fab fa-github-square"></i
-                  ></a>
-                </li>
-                <li>
-                  <a target="”_blank”" href="https://twitter.com/Tony_Joss"
-                    ><i class="fab fa-twitter-square"></i
-                  ></a>
-                </li>
-              </ul>
+
+              <!-- Navigation Links -->
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item contact-us">
+                    <a
+                      class="nav-link"
+                      
+                      aria-label="Contact Us Section"
+                      >Contact Us</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
           </nav>
-        </div>
+        </header>
+        <section id="hero-section" class="hero-section">
+          <div class="container text-center">
+            <div class="row">
+              <div class="col-12">
+                <h1 class="hero-title">CYBERSANCE</h1>
+                <p class="hero-subtitle">AI-Driven-CTI</p>
+              </div>
+            </div>
+          </div>
+        
+          <!-- Hero Decorations -->
+          <div class="hero-decorations">
+            <img src="images/hero/phoenix.svg" class="hero-svg phoenix" alt="Phoenix" />
+        
+            <!-- Line Decorations -->
+            <img
+              src="images/hero/leftTopline.svg"
+              class="hero-svg hero-svg-left-top"
+              alt="Decoration"
+            />
+            <img
+              src="images/hero/rightTopline.svg"
+              class="hero-svg hero-svg-right-top"
+              alt="Decoration"
+            />
+            <img
+              src="images/hero/leftBottomline.svg"
+              class="hero-svg hero-svg-left-bottom"
+              alt="Decoration"
+            />
+            <img
+              src="images/hero/rightBottomline.svg"
+              class="hero-svg hero-svg-right-bottom"
+              alt="Decoration"
+            />
+        
+            <!-- Text Labels -->
+            <span class="label collect-label">Collect</span>
+            <span class="label analyze-label">Analyze</span>
+            <span class="label feed-label">Feed</span>
+            <span class="label research-label">Research</span>
+          </div>
+        </section>
+        
+        
       </div>
-    </div>
-    <div id="work" class="portfolio">
-      <div class="portfolio__tittle">
-        <h2 class="h2__text">gallery portfolio /</h2>
-        <span>Below You Can Find Some Of My Work</span>
-      </div>
-      <div class="container container__portfolio"></div>
-    </div>
-    <div class="lorem"></div>
-    <div class="poem"></div>
-    <div id="news" class="news"></div>
-    <div id="bio" class="biographia"></div>
+    </main>
+
     <footer>
       <div id="contact" class="contact">
         <div class="mail">
@@ -112,7 +126,7 @@
             data-target="#myModal"
             href="#"
           >
-            <span class="up-head-word">tonyjoss1990@gmail.com</span></a
+            <!-- <span class="up-head-word">tonyjoss1990@gmail.com</span></a -->
           >
           <!--settings modal window bootstrap-->
           <div
@@ -204,6 +218,5 @@
     <script src="js/bower.min.js"></script>
     <script src="js/main.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/fontawesome.min.js"></script>
-    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
   </body>
 </html>

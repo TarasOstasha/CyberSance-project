@@ -1,10 +1,10 @@
 //**-native javascript-**//
-var btnHeader = document.querySelector('.navbar__btn');
-btnHeader.addEventListener('click', function () {
-  var menu = document.querySelector('.navbar__menuHeader');
-  menu.classList.toggle('open__menuHeader');
-  this.classList.toggle('navbar__btnOpen');
-});
+// var btnHeader = document.querySelector('.navbar__btn');
+// btnHeader.addEventListener('click', function () {
+//   var menu = document.querySelector('.navbar__menuHeader');
+//   menu.classList.toggle('open__menuHeader');
+//   this.classList.toggle('navbar__btnOpen');
+// });
 //**-realize on jQuery-**//
 $(document).ready(function () {
   //**btn scroll up fade in on scroll**//
