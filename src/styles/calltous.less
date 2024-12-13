@@ -1,0 +1,69 @@
+@main-color: #df2027;
+@main-text-color: #fff;
+
+
+
+.call-to-action {
+    font-family: 'Onest';
+    width: 100%; 
+    padding: 3rem 1rem;
+    background-color: @main-color; 
+    color: @main-text-color;
+    text-align: center;
+    margin: 0; 
+    box-sizing: border-box;
+  }
+  
+  .call-to-action h2 {
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .call-to-action p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    max-width: 50%;
+    margin: 0 auto;
+  }
+  
+
+  .call-to-action .btn-primary {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.25rem;
+    color: @main-color;
+    background-color: @main-text-color;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin: 3rem 0;
+  }
+  
+  .call-to-action .btn-primary:hover {
+    background-color: #f2f2f2;
+    color: #ff1c1c;
+    transform: translateY(-2px); /* Subtle hover effect */
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .call-to-action h2 {
+      font-size: 2rem;
+    }
+  
+    .call-to-action p {
+      font-size: 1rem;
+    }
+  
+    .call-to-action .btn-primary {
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+    }
+  }
+  

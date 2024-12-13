@@ -1,0 +1,37 @@
+
+@main-color: #df2027;
+@main-text-color: #fff;
+
+.mission {
+  position: relative;
+	padding: 2rem 0;
+  margin: 30px 0;
+
+  &::after {
+    content: '';
+    width: 50%;
+    border-bottom: solid 3px #1f1f1f;
+    position: absolute;
+    left: 23%;
+    top: -95px;
+    z-index: 999;
+  }
+  h2 {
+    font-family: 'Onest';
+    color: @main-color;
+    font-size: 45px;
+    text-align: center;
+    //margin-bottom: 25px;
+  }
+  p {
+    color: @main-text-color;
+    text-align: center;
+    padding: 15px 0;
+  }
+}
+.finger {
+  text-align: center;
+  img {
+    width: 10%;
+  }
+}

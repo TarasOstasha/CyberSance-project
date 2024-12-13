@@ -1,0 +1,69 @@
+:root {
+  --main-font-family: 'Onest', sans-serif;
+}
+
+@main-color: #df2027;
+@main-text-color: #fff;
+
+.insights {
+  position: relative;
+  font-family: 'Onest';//--main-font-family;
+  color: @main-text-color;
+  padding:  8rem 0;//30px 0;
+  &::after {
+    content: '';
+    width: 50%;
+    border-bottom: solid 3px #1f1f1f;
+    position: absolute;
+    left: 23%;
+    top: 0;
+    z-index: 999;
+  }
+}
+
+.insights-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  li {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+
+  }
+  .insights-text {
+    font-size: 40px;
+    font-weight: 400;
+    width: 100%;
+    max-width: 90%;
+  }
+  .counter-text {
+    width: 100%;
+    max-width: 90%;
+  }
+  .counter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    font-weight: 400;
+    li {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 100%;
+      flex: 1;
+      div {
+        font-size: 45px;
+        color: @main-color;
+      }
+      p {
+        width: 100%;
+        max-width: 75%;
+        width: 80%;
+      }
+    }
+  }
+
+}

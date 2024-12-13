@@ -7,6 +7,9 @@ const sourcemaps = require('gulp-sourcemaps');
 const autoprefixer = require('gulp-autoprefixer');
 const terser = require('gulp-terser');
 const plumber = require('gulp-plumber');
+const imagemin = require('gulp-imagemin');
+const newer = require('gulp-newer');
+const { src, dest, watch, series, parallel } = require('gulp');
 
 // Error Handler
 function handleError(err) {
@@ -51,11 +54,19 @@ function bowerCssTask() {
 // Images Task
 function imagesTask() {
   return gulp
-    .src('./src/images/**/*.{jpg,png,svg}')
-    .pipe(plumber({ errorHandler: handleError }))
+    .src('./src/images/**/*.{svg}')
+    .pipe(
+      imagemin([
+        imagemin.mozjpeg({ quality: 75, progressive: true }),
+        imagemin.optipng({ optimizationLevel: 5 }),
+        imagemin.gifsicle({ interlaced: true }),
+        imagemin.svgo({ plugins: [{ removeViewBox: false }] }),
+      ]),
+    )
     .pipe(gulp.dest('dist/images'))
-    .on('end', () => console.log('Images copied successfully!'));
+    .on('end', () => console.log('Images optimized successfully!'));
 }
+
 
 // Fonts Task
 function fontsTask() {
@@ -143,8 +154,10 @@ const build = gulp.series(
     bowerJsTask,
     fontsTask,
     mainJsTask,
+    lessTask
   ),
   gulp.parallel(browserSyncTask, watchTask),
 );
 
 exports.default = build;
+exports.imagesTask = imagesTask;

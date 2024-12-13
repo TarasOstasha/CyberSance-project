@@ -1,0 +1,60 @@
+:root {
+  --main-font-family: 'jsMath-cmr10', sans-serif;
+}
+
+@main-color: #df2027;
+@main-text-color: #fff;
+
+
+.services {
+  position: relative;
+  padding: 30px 0;
+  &::after {
+    content: '';
+    width: 50%;
+    border-bottom: solid 3px #1f1f1f;
+    position: absolute;
+    left: 23%;
+    top: 0;
+    z-index: 999;
+  }
+  h2 {
+    font-family: 'Onest'; //--main-font-family;
+    color: @main-color;
+    font-size: 45px;
+    text-align: center;
+    //margin-bottom: 25px;
+  }
+  h3 {
+    font-family: 'Onest';
+    color: @main-color;
+    font-size: 35px;
+    text-align: center;
+  }
+}
+
+.services-lit {
+  font-family: 'Onest';
+  padding: 30px 0;
+  li {
+    list-style: none;
+    display: flex;
+    //padding: 15px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    column-gap: 20px;
+    margin: 20px 0;
+    div {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 100%;
+      flex: 1;
+    }
+  }
+  p {
+    color: @main-text-color;
+    text-align: justify;
+    padding: 15px;
+  }
+}

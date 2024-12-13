@@ -1,0 +1,79 @@
+@main-color: #df2027;
+@main-text-color: #fff;
+
+
+.why-choose-us {
+    padding: 1px 1rem 2rem 1rem; //3rem 1rem;
+    margin: 1rem;
+    background-color: #1a1a1a;
+    color: @main-text-color;
+    text-align: center;
+  }
+  
+  .why-choose-us h2 {
+    // font-size: 2.5rem;
+    margin: 2rem 1rem;
+    font-family: 'Onest';
+    color: @main-color;
+    font-size: 45px;
+  }
+  
+  /* Features Grid */
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+  }
+  
+  .feature {
+    flex: 1 1 calc(25% - 2rem);
+    max-width: 300px;
+    background: #2a2a2a;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s, opacity 0.6s ease;
+    opacity: 0; /* Start invisible for animation */
+    transform: translateY(20px); /* Start offset for animation */
+  }
+  
+  .feature img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1rem;
+  }
+  
+  .feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+  }
+  
+  .feature p {
+    font-size: 1rem;
+    color: #cccccc;
+    line-height: 1.6;
+  }
+  
+  /* Hover Effect */
+  .feature:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Animation: When in view */
+  .feature.in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  @media (max-width: 768px) {
+    .features {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .feature {
+      max-width: 100%;
+    }
+  }

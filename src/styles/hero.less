@@ -69,10 +69,11 @@
 // }
 
 :root {
-  --main-font-family: 'jsMath-cmr10', sans-serif;
+  --main-font-family: 'jsMath-cmr10';
 }
 /* General Section Styling */
 .hero-section {
+  font-family: 'jsMath-cmr10';
   position: relative;
   background-color: black;
   color: white;
@@ -85,20 +86,19 @@
 }
 
 .hero-title {
-  font-family: 'jsMath-cmr10';
-  font-size: 7.5rem;
-  font-weight: bold;
-  background: linear-gradient(to right, white, red);
+  //font-family: 'jsMath-cmr10';
+  font-size: 8.5rem;
+  background: linear-gradient(to right, #fff, #db1f28);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   line-height: 1;
 }
 
 .hero-subtitle {
-  font-family: 'jsMath-cmr10';
+  //font-family: 'jsMath-cmr10';
   font-size: 4.5rem;
   font-weight: 500;
-  background: linear-gradient(to right, white, red);
+  background: linear-gradient(to right, #fff, #db1f28);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -109,7 +109,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  opacity: 0.3;
+  opacity: 0.4;
   max-width: 50%;
   z-index: 0;
 }
@@ -117,9 +117,6 @@
 /* Line Decorations */
 .hero-svg {
   position: absolute;
-  // &:after {
-
-  // } 
 }
 .phoenix::before, .phoenix::after { 
   content: '';
@@ -163,14 +160,14 @@
 .label {
   position: absolute;
   font-size: 2.5rem;
-  font-weight: bold;
+  //font-weight: bold;
   color: white;
-  font-family: --main-font-family;
+  //font-family: --main-font-family;
 }
 
 .collect-label {
   top: 12%;
-  left: 12%;
+  left: 9%;
   transform: translate(-50%, -50%);
 }
 
@@ -182,7 +179,7 @@
 
 .feed-label {
   bottom: 12%;
-  left: 12%;
+  left: 6%;
   transform: translate(-50%, 50%);
 }
 
@@ -191,3 +188,31 @@
   right: 12%;
   transform: translate(50%, 50%);
 }
+//
+/* General Section Styling */
+.hero {
+  text-align: center;
+  background-color: black;
+  padding: 50px;
+  color: white;
+  position: relative;
+}
+
+/* Main Heading Styling */
+.hero h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  margin: 0;
+  letter-spacing: 5px;
+  position: relative;
+  text-transform: uppercase;
+}
+.cyber {
+  color: white;
+  text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.8);
+}
+.sance {
+  color: red;
+  //text-shadow: 2px 2px 8px rgba(255, 0, 0, 0.8);
+}
+

@@ -7,6 +7,46 @@
 // });
 //**-realize on jQuery-**//
 $(document).ready(function () {
+    // Function to animate the counter
+  function animateCounters() {
+    $('.counter-value').each(function () {
+      const $this = $(this);
+      const countTo = $this.attr('data-count');
+
+      $({ countNum: 0 }).animate(
+        { countNum: countTo },
+        {
+          duration: 2000, // Animation duration in ms
+          easing: 'linear', // Easing function
+          step: function () {
+            $this.text(Math.floor(this.countNum) + '%');
+          },
+          complete: function () {
+            $this.text(this.countNum + '%'); // Ensure the final value is set
+          },
+        }
+      );
+    });
+  }
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          animateCounters();
+        }
+      });
+    },
+    {
+      threshold: 0.5, // Trigger when 50% of the section is visible
+    }
+  );
+
+  // Observe the insights section
+  const insightsSection = document.getElementById('insights');
+  if (insightsSection) {
+    observer.observe(insightsSection);
+  }
   //**btn scroll up fade in on scroll**//
   $('body').prepend('<a href="#" class="back-to-top">Back to Top</a>');
   $(window).scroll(function () {
@@ -92,4 +132,26 @@ $(document).ready(function () {
       return false;
     }
   });
+
+  const $animatedElements = $(".animate");
+
+  function handleScrollAnimation() {
+    $animatedElements.each(function () {
+      const $el = $(this);
+      const offset = $el.offset().top;
+      const windowBottom = $(window).scrollTop() + $(window).height();
+
+      if (offset <= windowBottom - 100) {
+        $el.addClass("in-view");
+      } else {
+        $el.removeClass("in-view");
+      }
+    });
+  }
+
+  // Attach scroll event
+  $(window).on("scroll", handleScrollAnimation);
+
+  // Trigger on page load
+  handleScrollAnimation();
 });
