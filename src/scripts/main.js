@@ -1,11 +1,4 @@
-//**-native javascript-**//
-// var btnHeader = document.querySelector('.navbar__btn');
-// btnHeader.addEventListener('click', function () {
-//   var menu = document.querySelector('.navbar__menuHeader');
-//   menu.classList.toggle('open__menuHeader');
-//   this.classList.toggle('navbar__btnOpen');
-// });
-//**-realize on jQuery-**//
+
 $(document).ready(function () {
     // Function to animate the counter
   function animateCounters() {
@@ -47,26 +40,7 @@ $(document).ready(function () {
   if (insightsSection) {
     observer.observe(insightsSection);
   }
-  //**btn scroll up fade in on scroll**//
-  $('body').prepend('<a href="#" class="back-to-top">Back to Top</a>');
-  $(window).scroll(function () {
-    if ($(window).scrollTop() > 300) {
-      $('a.back-to-top').fadeIn('slow');
-    } else {
-      $('a.back-to-top').fadeOut('slow');
-    }
-  });
-  // btn scroll up
-  $('a.back-to-top').click(function () {
-    console.log('works');
-    $('html, body').animate(
-      {
-        scrollTop: 0,
-      },
-      1000,
-    );
-    return false;
-  });
+
 
   // **scroll menu**//
   $('a:not(.left, .right, .back-to-top)[href^="#"]').click(function () {
