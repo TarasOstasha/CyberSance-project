@@ -26,7 +26,7 @@
         <nav class="navbar navbar-expand-lg nav">
           <div class="container-fluid">
             <!-- Logo -->
-            <a class="navbar-brand" href="#" aria-label="Go to Home Page">
+            <a class="navbar-brand nav-logo" href="#" aria-label="Go to Home Page">
               <img class="logo-img" src="images/cybersance_logo_screen.png" alt="logo">
             </a>
 
@@ -40,12 +40,18 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav ms-auto">
                 <li class="nav-item contact-us">
-                  <a class="nav-link" aria-label="Contact Us Section">Contact Us</a>
+                  <!-- Trigger Modal -->
+                  <a class="nav-link" href="#" type="button" data-bs-toggle="modal" data-bs-target="#contactModal"
+                    aria-label="Contact Us Section">
+                    Contact Us
+                  </a>
                 </li>
+
               </ul>
             </div>
           </div>
         </nav>
+      </header>
       </header>
       <section id="hero-section" class="hero-section">
         <div class="container text-center">
@@ -80,57 +86,73 @@
       </section>
       <section id="mission" class="mission">
         <h2>Modern Cybersecurity at its Best</h2>
-        <p>Building unique cyber citadels for companies, leaving them only to deal with peace of mind and business success.
-          We are here to provide a true Cyber Renaissance for your organization, its security systems, and preparedness for future challenges.</p>
+        <!-- <p>Building unique cyber citadels for companies, leaving them only to deal with peace of mind and business
+          success.
+          We are here to provide a true Cyber Renaissance for your organization, its security systems, and preparedness
+          for future challenges.</p> -->
+        <p>
+          <!-- We are here to provide a true Cyber Renaissance for your organization and prepare it for any future challenges -->
+          Our advanced cybersecurity solutions shield your data, defend your systems, and ensure peace of mind in an
+          ever-changing threat landscape.
+        </p>
         <div class="finger">
           <img src="images/finger.svg" alt="">
-        </div>  
-        </section>
+        </div>
+      </section>
       <section id="services" class="services">
         <h2>Our Services</h2>
         <ul class="services-lit">
           <li>
             <div>
-              <h3>Data Collect</h3>
+              <h3>Data Collection</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,molestiae quas vel sint commodi
-                repudiandae consequuntur voluptatum laborumnumquam blanditiis harum quisquam eius sed odit fugiat iusto
-                fuga praesentiumoptio, eaque rerum! Provident similique accusantium nemo autem. Veritatisobcaecati
-                tenetur iure eius earum ut molestias architecto voluptate aliquamnihil, eveniet aliquid culpa officia
-                aut! Impedit sit sunt quaerat, odit,
+                It is our tradition to go above and beyond - to fulfil the unique needs of our clients.
+                There are two main factors in our work that enable us to achieve that:
+                <a href="">Read More...</a>
               </p>
             </div>
-            <div>
+            <div class="d-block">
               <img src="images/services/unnamed1.png" alt="">
             </div>
           </li>
           <li>
-            <div>
+            <div class="d-none d-md-block">
               <img src="images/services/unnamed (1) 1.png" alt="">
             </div>
             <div>
               <h3>Data Feed</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,molestiae quas vel sint commodi
-                repudiandae consequuntur voluptatum laborumnumquam blanditiis harum quisquam eius sed odit fugiat iusto
-                fuga praesentiumoptio, eaque rerum! Provident similique accusantium nemo autem. Veritatisobcaecati
-                tenetur iure eius earum ut molestias architecto voluptate aliquamnihil, eveniet aliquid culpa officia
-                aut! Impedit sit sunt quaerat, odit,
+                Our real-time data feeds provide you with up-to-date insights, enabling you to stay ahead in the
+                fast-moving cybersecurity landscape.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, ad, minima delectus magnam nam ipsum id
+                aliquid nulla quos voluptatem nihil, nostrum accusamus deserunt voluptatibus? Fuga natus deleniti
+                perspiciatis distinctio! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis ut
+                maiores possimus voluptate dicta, laboriosam quis molestias explicabo amet minus! Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Accusantium impedit modi odio sint veniam sunt dolore incidunt! Enim,
+                minima provident! Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptatem molestias
+                sunt illo corporis id dicta amet reprehenderit natus consequuntur.
               </p>
+            </div>
+            <div class="d-block d-md-none">
+              <img src="images/services/unnamed (1) 1.png" alt="">
             </div>
           </li>
           <li>
             <div>
               <h3>Data Analyze with AI</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,molestiae quas vel sint commodi
-                repudiandae consequuntur voluptatum laborumnumquam blanditiis harum quisquam eius sed odit fugiat iusto
-                fuga praesentiumoptio, eaque rerum! Provident similique accusantium nemo autem. Veritatisobcaecati
-                tenetur iure eius earum ut molestias architecto voluptate aliquamnihil, eveniet aliquid culpa officia
-                aut! Impedit sit sunt quaerat, odit,
+                With advanced AI algorithms, we transform raw data into actionable insights, empowering you to make
+                informed decisions.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, ad, minima delectus magnam nam ipsum id
+                aliquid nulla quos voluptatem nihil, nostrum accusamus deserunt voluptatibus? Fuga natus deleniti
+                perspiciatis distinctio! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis ut
+                maiores possimus voluptate dicta, laboriosam quis molestias explicabo amet minus! Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Accusantium impedit modi odio sint veniam sunt dolore incidunt! Enim,
+                minima provident! Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptatem molestias
+                sunt illo corporis id dicta amet reprehenderit natus consequuntur.
               </p>
             </div>
-            <div>
+            <div class="d-block">
               <img src="images/services/unnamed (2) 1.png" alt="">
             </div>
           </li>
@@ -140,13 +162,13 @@
         <ul class="insights-list">
           <li>
             <p class="insights-text">
-              Transforming Data into 
+              Transforming Data into
               Actionable Insights
             </p>
           </li>
           <li>
             <p class="counter-text">
-              Our innovative approach has helped clients achieve remarkable results. 
+              Our innovative approach has helped clients achieve remarkable results.
               With a focus on data-driven strategies, we empower businesses to thrive .
             </p>
             <ul class="counter">
@@ -160,7 +182,7 @@
               <li>
                 <div class="counter-value" data-count="90">0</div>
                 <p>
-                  Success rate in delivering 
+                  Success rate in delivering
                   actionable insights.
                 </p>
               </li>
@@ -176,30 +198,33 @@
               <img src="images/security-as-a-service-svgrepo-com.svg" alt="Security Icon" />
               <h3>Filling the Gaps</h3>
               <p>
-                We can be your designated cybersecurity provider or work in harmony with other vendors, filling the gaps and eliminating blind spots for your organization.
+                We can be your designated cybersecurity provider or work in harmony with other vendors, filling the gaps
+                and eliminating blind spots for your organization.
               </p>
             </div>
             <div class="feature animate">
               <img src="images/roadmap-svgrepo-com.svg" alt="Roadmap Icon" />
               <h3>Complete Your Roadmap</h3>
               <p>
-                Complete your security roadmap with Cybersance services to help your company experience a true digital renaissance in all aspects.
+                Complete your security roadmap with Cybersance services to help your company experience a true digital
+                renaissance in all aspects.
               </p>
             </div>
             <div class="feature animate">
               <img src="images/security-guard-svgrepo-com.svg" alt="Strategy Icon" />
               <h3>Proactive Security</h3>
               <p>
-                Armed with top-notch information and a strategic shield, avert and vanquish cyberattacks long before they can happen.
+                Armed with top-notch information and a strategic shield, avert and vanquish cyberattacks long before
+                they can happen.
               </p>
             </div>
-            <div class="feature animate">
+            <!-- <div class="feature animate">
               <img src="images/qaitbay-citadel-svgrepo-com.svg" alt="Citadel Icon" />
               <h3>Custom Security Citadel</h3>
               <p>
                 We are not here to help you survive but thrive through these challenging times.
               </p>
-            </div>
+            </div> -->
           </div>
         </div>
       </section>
@@ -211,13 +236,64 @@
         </div>
       </section>
     </div>
-    <section id="contactus" class="call-to-action full-width">
-      <h2>Secure Your Digital Future</h2>
-      <p>
-        Choose Cybersance, and let us build a unique cybersecurity citadel for your company.
-        We cannot prevent cybersecurity "earthquakes" from happening, but we can ensure your security foundations are so powerful that you don’t feel them.
-      </p>
-      <a href="#contact-us" class="btn-primary">Get Started</a>
+    <section id="call-to-action" class="call-to-action full-width">
+      <!-- <h2>Secure Your Digital Future</h2> -->
+      <h2>Why Choose Us</h2>
+      <article>
+        <h3>Cybersance is an efficient blend of automation, AI and human brain.</h3>
+        <p class="p-sub">
+          <!-- <strong> -->
+          It is here not to simply provide efficient security support to your company, but also do it on such level
+          that
+          would give you competitive advantage.
+          <!-- </strong> -->
+        </p>
+        <!-- <hr> -->
+        <p>
+          We do have collections by design, delivering exclusive, fresh content directly from Deep & Dark Web to your
+          doorstep. On top of that, our seasoned experts, armed with top-notch data, advanced technology and unique
+          knowledge and skill set, are here to meet all your security needs.
+        </p>
+      </article>
+      <article>
+        <h3>Predictive Power of Cyber Threat Intelligence (CTI)</h3>
+        <p>
+          We are confident that the essence of Cybersecurity is to intelligently predict and prevent, instead of letting
+          any potential disaster happen and deal with its aftermath.
+          This is when our brilliant analysts enter the stage - to unleash the predictive power of Cyber Threat
+          Intelligence (CTI). It lies in the ability to anticipate, forecast, and mitigate potential cyber threats
+          before they materialize into active incidents. This proactive approach reduces the likelihood of breaches,
+          minimizes damage, and enhances organizational resilience.
+        </p>
+      </article>
+
+      <a data-bs-toggle="modal" data-bs-target="#contactModal" href="#contact-us" class="btn-primary">Get Started</a>
+    </section>
+    <section id="industriesweserve" class="industriesweserve">
+      <div class="container">
+        <h2>Industries We Serve</h2>
+        <p>
+          Cybersance successfully delivers its services to both the private and public sector.
+          We count among our clients numerous reputable companies in various industries, such as finance, retail,
+          healthcare, education, as well as government agencies.
+          Our clients especially appreciate how we masterfully tailor our content to industry-specific cybersecurity
+          challenges.
+          Our specialists conduct thorough assessments and provide exclusive technical and geopolitical insights,
+          shaping the successful future of each organization we support.
+        </p>
+      </div>
+    </section>
+    <section id="aboutus" class="aboutus full-width">
+      <div class="container">
+        <h2>About Us</h2>
+        <p>
+          We are committed to making the digital world a safer place.
+          With over a decade of experience in cybersecurity, we leverage cutting-edge technology
+          and a team of industry experts to deliver tailored solutions.
+          Whether you're a small business or a global enterprise,
+          our mission is to secure your most valuable digital assets.
+        </p>
+      </div>
     </section>
   </main>
   <footer class="footer">
@@ -230,6 +306,7 @@
           <li><a href="#whychooseus">Why Choose Us</a></li>
           <li><a href="#contactus">Contact Us</a></li>
           <li><a href="#terms">Terms of Service</a></li>
+          <li><a href="#aboutus">About Us</a></li>
         </ul>
       </div>
       <!-- Logo and Company Info -->
@@ -252,8 +329,55 @@
       <p>&copy; 2024 Cybersance. All rights reserved.</p>
     </div>
   </footer>
-  
-  
+
+  <!-- Popup Modal -->
+  <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <!-- <h5 class="modal-title" id="contactModalLabel">Contact Us</h5> -->
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body position-relative">
+          <!-- Close Icon in Modal Body -->
+          <button type="button" class="close-icon btn btn-link" data-bs-dismiss="modal" aria-label="Close">
+            <img src="images/close-svgrepo-com.svg" alt="Close" width="20" height="20">
+          </button>
+
+          <!-- Form -->
+          <form id="contactForm">
+            <!-- Company Name -->
+            <div class="mb-3">
+              <label for="companyName" class="form-label">Company Name</label>
+              <input type="text" class="form-control" id="companyName" name="companyName"
+                placeholder="Enter your company name" required>
+            </div>
+            <!-- Email -->
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <!-- Phone -->
+            <div class="mb-3">
+              <label for="phone" class="form-label">Phone</label>
+              <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number"
+                required>
+            </div>
+            <!-- Textarea -->
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" name="message" rows="4" placeholder="Enter your message"
+                required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
   <!-- <script> src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"</script> -->
   <script src="js/bower.min.js"></script>
   <script src="js/main.min.js"></script>

@@ -28,4 +28,66 @@
   &:hover {
     color: lighten(#979595, 30%);
   }
+  &:focus {
+    color: #979595;
+  }
+}
+
+
+// modal window
+.modal-content {
+  border-radius: 8px;
+  padding: 1rem;
+  font-family:  'Onest';
+  background: rgba(255, 255, 255, .9);
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-title {
+  color: @main-color;
+  font-weight: bold;
+}
+
+.btn-close {
+  background: transparent;
+}
+
+.form-label {
+  font-weight: bold;
+  color: #333;
+}
+
+.form-control {
+  border-radius: 5px;
+}
+
+.btn-primary {
+  background-color: #ff4d4d;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #e63939;
+}
+.close-icon {
+  position: absolute;
+  top: -12%;//10px;
+  right: -2%;//10px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.close-icon img {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.2s ease;
+}
+
+.close-icon img:hover {
+  transform: scale(1.2);
 }

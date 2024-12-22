@@ -1,6 +1,6 @@
 
 $(document).ready(function () {
-    // Function to animate the counter
+  // Function to animate the counter
   function animateCounters() {
     $('.counter-value').each(function () {
       const $this = $(this);
@@ -128,4 +128,75 @@ $(document).ready(function () {
 
   // Trigger on page load
   handleScrollAnimation();
+
+  // forma data
+  $("#contactForm").on("submit", function (event) {
+    event.preventDefault(); // Prevent form from submitting and refreshing the page
+
+    // Basic Validation
+    let isValid = true;
+    $("#contactForm input, #contactForm textarea").each(function () {
+      if (!$(this).val().trim()) {
+        $(this).addClass("is-invalid"); // Add Bootstrap 'is-invalid' class
+        toastr.error("Please fill out all required fields."); // Show toastr error
+        isValid = false;
+        return false; // Break the loop
+      } else {
+        $(this).removeClass("is-invalid"); // Remove 'is-invalid' if corrected
+      }
+    });
+
+    // If the form is valid, send data via AJAX
+    if (isValid) {
+      const formData = {
+        name: $("#companyName").val().trim(),
+        email: $("#email").val().trim(),
+        phone: $("#phone").val().trim(),
+        message: $("#message").val().trim(),
+      };
+
+      // AJAX request to send form data to the server
+      $.ajax({
+        url: "send_form.php", // Path to PHP script
+        type: "POST",
+        data: formData,
+        success: function (response) {
+          console.log("Server Response:", response);
+
+          // Clear form fields after successful submission
+          $("#contactForm")[0].reset();
+
+          // Close the modal (Bootstrap)
+          const modal = bootstrap.Modal.getInstance(document.getElementById("contactModal"));
+          modal.hide();
+          $(".contact-us .nav-link").focus();
+
+          // Show toastr success message
+          toastr.success("Thank you for contacting us! We will get back to you soon.");
+        },
+        error: function (xhr) {
+          console.error("Error:", xhr.responseText);
+
+          // Show toastr error message
+          toastr.error("Failed to send your message. Please try again.");
+        },
+      });
+    }
+  });
+
+  // Remove validation error on input change
+  $("#contactForm input, #contactForm textarea").on("input", function () {
+    if ($(this).val().trim()) {
+      $(this).removeClass("is-invalid");
+    }
+  });
+
+
+  // Remove validation error on input change
+  $("#contactForm input, #contactForm textarea").on("input", function () {
+    if ($(this).val().trim()) {
+      $(this).removeClass("is-invalid");
+    }
+  });
+
 });

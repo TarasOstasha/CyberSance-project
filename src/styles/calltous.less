@@ -1,13 +1,19 @@
 //@main-color: #d93434;
 //@main-text-color: #fff;
-
+@main-text-color: #f2f2f2;
 
 
 .call-to-action {
     font-family: 'Onest';
     width: 100%; 
     padding: 3rem 1rem;
-    background-color: @main-color; 
+    //background-color: @main-color; 
+    //background: linear-gradient(135deg, #ff7e5f, #d93434);
+    //background-image: url('../images/hero/phoenix.svg');
+    background: 
+    linear-gradient(135deg, rgba(255, 126, 95, 0.8), rgba(217, 52, 52, 0.8)),
+    url('../images/hero/phoenix.svg') center no-repeat;
+
     color: @main-text-color;
     text-align: center;
     margin: 0; 
@@ -19,16 +25,35 @@
     font-weight: bold;
     margin-bottom: 1rem;
   }
-  
-  .call-to-action p {
-    font-size: 1.125rem;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
+  h3 {
     width: 100%;
     max-width: 50%;
     margin: 0 auto;
+    font-size: 1.5rem;
+    padding: 25px 15px;
   }
-  
+  .call-to-action p {
+    font-size: 1.125rem;
+    //line-height: 1.6;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+  }
+  .p-sub {
+    font-weight: 600;
+    text-align: center!important;
+    margin-bottom: 15px!important;
+  }
+  hr {
+    border: none;
+    height: 2px;
+    background: #f2f2f2;//linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient effect */
+    margin: 20px 0;
+    color: #f2f2f2;
+}
+
 
   .call-to-action .btn-primary {
     display: inline-block;
