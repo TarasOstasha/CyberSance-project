@@ -9,6 +9,7 @@
       "version": "1.0.0",
       "license": "ISC",
       "dependencies": {
+        "bootstrap": "^5.3.3",
         "bower": "^1.8.8",
         "express": "^4.17.1",
         "gulp-debug": "^5.0.1",
@@ -296,6 +297,17 @@
       },
       "engines": {
         "node": ">= 8"
+      }
+    },
+    "node_modules/@popperjs/core": {
+      "version": "2.11.8",
+      "resolved": "https://registry.npmjs.org/@popperjs/core/-/core-2.11.8.tgz",
+      "integrity": "sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==",
+      "license": "MIT",
+      "peer": true,
+      "funding": {
+        "type": "opencollective",
+        "url": "https://opencollective.com/popperjs"
       }
     },
     "node_modules/@sindresorhus/is": {
@@ -1439,6 +1451,25 @@
       },
       "engines": {
         "node": ">=0.10.40"
+      }
+    },
+    "node_modules/bootstrap": {
+      "version": "5.3.3",
+      "resolved": "https://registry.npmjs.org/bootstrap/-/bootstrap-5.3.3.tgz",
+      "integrity": "sha512-8HLCdWgyoMguSO9o+aH+iuZ+aht+mzW0u3HIMzVu7Srrpv7EBBxTnrFlSCskwdY1+EOFQSm7uMJhNQHkdPcmjg==",
+      "funding": [
+        {
+          "type": "github",
+          "url": "https://github.com/sponsors/twbs"
+        },
+        {
+          "type": "opencollective",
+          "url": "https://opencollective.com/bootstrap"
+        }
+      ],
+      "license": "MIT",
+      "peerDependencies": {
+        "@popperjs/core": "^2.11.8"
       }
     },
     "node_modules/bower": {

@@ -1,5 +1,6 @@
 
 $(document).ready(function () {
+
   // Function to animate the counter
   function animateCounters() {
     $('.counter-value').each(function () {
@@ -199,4 +200,20 @@ $(document).ready(function () {
     }
   });
 
+  // load header and footer
+  function loadComponent(selector, url) {
+    $.get(url)
+      .done(function (data) {
+        $(selector).html(data);
+        console.log(`${url} loaded successfully.`);
+      })
+      .fail(function (xhr, status, error) {
+        console.error(`Error loading ${url}:`, status, error);
+      });
+  }
+
+  loadComponent('header', '../components/header.html');
+  loadComponent('footer', '../components/footer.html');
 });
+
+

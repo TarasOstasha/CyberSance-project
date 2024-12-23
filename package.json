@@ -4,6 +4,7 @@
   "description": "new verstka",
   "main": "index.js",
   "dependencies": {
+    "bootstrap": "^5.3.3",
     "bower": "^1.8.8",
     "express": "^4.17.1",
     "gulp-debug": "^5.0.1",
