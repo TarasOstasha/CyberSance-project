@@ -214,6 +214,14 @@ $(document).ready(function () {
 
   loadComponent('header', '../components/header.html');
   loadComponent('footer', '../components/footer.html');
+
+  // parallax why choose us
+  $(window).on("scroll", function () {
+    const scrollPosition = $(window).scrollTop();
+    $(".call-to-action").css({
+      "background-position": `center ${scrollPosition * 0.5}px`, // Parallax speed
+    });
+  });
 });
 
 

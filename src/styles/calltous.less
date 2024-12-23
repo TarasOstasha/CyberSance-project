@@ -3,92 +3,146 @@
 //@main-text-color: #f2f2f2;
 
 
-.call-to-action {
-    font-family: 'Onest';
-    width: 100%; 
-    padding: 3rem 1rem;
-    //background-color: @main-color; 
-    //background: linear-gradient(135deg, #ff7e5f, #d93434);
-    //background-image: url('../images/hero/phoenix.svg');
-    background: 
-    linear-gradient(135deg, rgba(255, 126, 95, 0.8), rgba(217, 52, 52, 0.8)),
-    url('../images/hero/phoenix.svg') center no-repeat;
+// .call-to-action {
+//     font-family: 'Onest';
+//     width: 100%; 
+//     padding: 3rem 1rem;
+//     background: 
+//     linear-gradient(135deg, rgba(255, 126, 95, 0.1), rgba(217, 52, 52, 0.9)),
+//     url('../images/hero/phoenix.svg') center no-repeat;
+//     color: @main-text-color;
+//     text-align: center;
+//     margin: 0; 
+//     box-sizing: border-box;
+//   }
 
-    color: @main-text-color;
-    text-align: center;
-    margin: 0; 
-    box-sizing: border-box;
-  }
-  
-  .call-to-action h2 {
-    font-size: 45px;
-    font-weight: bold;
-    margin-bottom: 1rem;
-  }
-  h3.calltous-title {
-    width: 100%;
-    max-width: 50%;
-    margin: 0 auto;
-    font-size: 1.5rem;
-    padding: 25px 15px;
-  }
-  .call-to-action p {
-    font-size: 1.125rem;
-    //line-height: 1.6;
-    margin-bottom: 1.5rem;
-    width: 100%;
-    max-width: 80%;
-    margin: 0 auto;
-    text-align: justify;
-  }
-  .p-sub {
-    font-weight: 600;
-    text-align: center!important;
-    margin-bottom: 15px!important;
-  }
-  hr {
-    border: none;
-    height: 2px;
-    background: #f2f2f2;//linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient effect */
-    margin: 20px 0;
-    color: #f2f2f2;
+// parallax effect
+.call-to-action {
+  font-family: 'Onest';
+  width: 100%;
+  padding: 3rem 1rem;
+  background-attachment: fixed; 
+  color: @main-text-color; 
+  text-align: center;
+  margin: 0;
+  box-sizing: border-box;
+  position: relative; 
+}
+
+.call-to-action::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(255, 126, 95, 0.1), rgba(217, 52, 52, 0.9));
+  z-index: 1;
+}
+
+.call-to-action h2,
+.call-to-action .whychooseus {
+  position: relative;
+  z-index: 2; 
+}
+
+.call-to-action .btn-primary {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #d93434;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  position: relative;
+  z-index: 2; 
+}
+
+.call-to-action .btn-primary:hover {
+  background-color: #d93434;
+  color: #ffffff;
+}
+// end parallax effect
+
+.call-to-action h2 {
+  font-size: 45px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+h3.calltous-title {
+  width: 100%;
+  max-width: 50%;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  padding: 25px 15px;
+}
+
+.call-to-action p {
+  font-size: 1.125rem;
+  //line-height: 1.6;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.p-sub {
+  font-weight: 600;
+  text-align: center !important;
+  margin-bottom: 15px !important;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background: #f2f2f2; //linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient effect */
+  margin: 20px 0;
+  color: #f2f2f2;
 }
 
 
+.call-to-action .btn-primary {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.25rem;
+  color: @main-color;
+  background-color: @main-text-color;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin: 3rem 0;
+}
+
+.call-to-action .btn-primary:hover {
+  background-color: #f2f2f2;
+  color: #ff1c1c;
+  transform: translateY(-2px);
+  /* Subtle hover effect */
+}
+
+.whychooseus {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 25px 0;
+}
+
+
+@media (max-width: 768px) {
+  .call-to-action h2 {
+    font-size: 2rem;
+  }
+
+  .call-to-action p {
+    font-size: 1rem;
+  }
+
   .call-to-action .btn-primary {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    font-size: 1.25rem;
-    color: @main-color;
-    background-color: @main-text-color;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    margin: 3rem 0;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
   }
-  
-  .call-to-action .btn-primary:hover {
-    background-color: #f2f2f2;
-    color: #ff1c1c;
-    transform: translateY(-2px); /* Subtle hover effect */
-  }
-  
- 
-  @media (max-width: 768px) {
-    .call-to-action h2 {
-      font-size: 2rem;
-    }
-  
-    .call-to-action p {
-      font-size: 1rem;
-    }
-  
-    .call-to-action .btn-primary {
-      font-size: 1rem;
-      padding: 0.5rem 1rem;
-    }
-  }
-  
+}
