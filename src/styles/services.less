@@ -9,6 +9,7 @@
 .services {
   position: relative;
   padding: 30px 0;
+
   &::after {
     content: '';
     width: 50%;
@@ -18,6 +19,7 @@
     top: 0;
     z-index: 999;
   }
+
   h2 {
     font-family: 'Onest'; //--main-font-family;
     color: @main-color;
@@ -25,6 +27,7 @@
     text-align: center;
     //margin-bottom: 25px;
   }
+
   h3 {
     font-family: 'Onest';
     color: @main-color;
@@ -33,10 +36,33 @@
   }
 }
 
+.image-wrapper {
+  position: relative;
+}
+
+.image-wrapper::before {
+  // content: ''; 
+  // position: absolute;
+  // top: 0;
+  // left: 11%;
+  // width: 78%;
+  // height: 100%;
+  // background-color: rgba(241, 147, 93, 0.1); 
+  // z-index: 1; 
+  // pointer-events: none; 
+  // border-radius: 15px;
+}
+
+.image-wrapper img {
+  // margin: 0 auto;
+  // display: block; 
+}
+
 .services-list {
   font-family: 'Onest';
   padding: 30px 0;
   text-align: center;
+
   li {
     list-style: none;
     display: flex;
@@ -46,24 +72,108 @@
     width: 100%;
     column-gap: 20px;
     margin: 20px 0;
+
     div {
       display: flex;
       flex-direction: column;
       flex-basis: 100%;
       flex: 1;
+
     }
+
   }
+
   p {
     color: @main-text-color;
     text-align: justify;
     padding: 15px;
     font-weight: 200;
+
     a {
       color: @main-color;
       text-decoration: none;
+
       &:hover {
         text-decoration: underline;
       }
     }
   }
+}
+.d-block-img {
+  img {
+    width: 100%;
+    border-radius: 20px;
+    margin: 15px 0;
+  }
+}
+.services-list-item {
+  padding: 0 15px;
+  font-size: 14px;
+  color: @main-text-color;
+  font-weight: 200;
+  h4 {
+    font-size: 16px;
+  }
+  li {
+    margin: 5px 0;
+    justify-content: flex-start;
+    ul {
+      padding: 0;
+      text-align: left;
+    }
+  }
+
+}
+
+
+@media (max-width: 768px) {
+  .industriesweserve {
+    margin: 40px 0!important;
+  }
+  .services-list li {
+    flex-direction: column;
+
+    img {
+      width: 100%;
+    }
+
+    h3 {
+      font-size: 20px;
+    }
+  }
+
+  .calltous-title {
+    max-width: 100% !important;
+  }
+
+  .nav-logo {
+    width: 77% !important;
+  }
+
+  .aboutus p {
+    max-width: 100% !important;
+  }
+
+  .image-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 104%;
+    background-color: rgba(241, 147, 93, 0.1);
+    z-index: 1;
+    pointer-events: none;
+    border-radius: 15px;
+  }
+  .section-img img {
+    width: 100%;
+  }
+  .services-list-item {
+    li {
+      text-align: justify;
+    }
+  }
+
+
 }

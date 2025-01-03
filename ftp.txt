@@ -1,0 +1,4 @@
+host: cybersance.tarasostasha.com
+username: cybersance@cybersance.tarasostasha.com
+pass - o...02
+port: 21

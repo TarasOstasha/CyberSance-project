@@ -9,15 +9,296 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css" />
+    <style>
+.btn-primary1 {
+    display: inline-block;
+    padding: .75rem 1.5rem;
+    font-size: 1.25rem;
+    color: #e6512a;
+    background-color: #ccc;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all .3s ease;
+    cursor: pointer;
+    margin: 3rem 0;
+}
+    </style>
 </head>
 
 <body>
     <main class="wrapper">
         <div class="container">
             <header></header>
-              <section>
-
-              </section>
+            <section class="dataCollection strategicPlanning" id="dataCollection">
+                <h2>Strategic Planning</h2>
+                <p class="p-head">
+                    We offer top-of-the-line Strategic Planning based on Predictive Power of Cyber Threat Intelligence
+                    (CTI).
+                </p>
+                <!-- <ul class="dataCollection-list">
+                    <li class="dataCollection-item">
+                        <h3>Threat Landscape Monitoring</h3>
+                        <ul>
+                            <li>
+                                Tracking emerging trends, vulnerabilities, and attacker methodologies across global networks, dark web, and public forums.
+                            </li>
+                            <li>
+                                Example: Identifying a rising trend in IoT malware targeting home devices and warning organizations to enhance IoT security.
+                            </li>
+                        </ul>
+                        <div class="d-block">
+                            <img src="images/services/Threat Landscape Monitoring.webp" alt="">
+                        </div>
+                    </li>
+                    <li class="dataCollection-item">
+                        <h3>TTP (Tactics, Techniques, and Procedures) Analysis</h3>
+                        <ul>
+                            <li>
+                                Understanding adversarial behaviors to predict likely future targets and attack methods.
+                            </li>
+                            <li>
+                                Example: If a known threat group frequently uses spear-phishing emails, organizations can preemptively educate employees and strengthen email defenses.
+                            </li>
+                        </ul>
+                        <div class="d-block">
+                            <img src="images/services/TTP (Tactics, Techniques, and Procedures) Analysis.webp" alt="">
+                        </div>
+                    </li>
+                    <li class="dataCollection-item">
+                        <h3>Behavioral Analytics</h3>
+                        <ul>
+                            <li>
+                                Monitoring unusual or evolving patterns in network activity, user behavior, or attacker methodologies.
+                            </li>
+                            <li>
+                                Example: A sudden increase in failed login attempts from a specific region may indicate an impending brute force attack.
+                            </li>
+                        </ul>
+                        <div class="d-block">
+                            <img src="images/phoenix close-up.jpg" alt="Behavioral Analytics">
+                        </div>
+                    </li>
+                    <li class="dataCollection-item">
+                        <h3>Vulnerability Exploitation Prediction</h3>
+                        <ul>
+                            <li>
+                                Using intelligence to forecast which known vulnerabilities are likely to be exploited based on attacker activity.
+                            </li>
+                            <li>
+                                Example: Observing chatter on dark web forums about a recently disclosed vulnerability and preparing patch deployments.
+                            </li>
+                        </ul>
+                        <div class="d-block">
+                            <img src="images/services/Vulnerability Exploitation Prediction.webp" alt="">
+                        </div>
+                    </li>
+                    <li class="dataCollection-item">
+                        <h3>Industry-Specific Threat Profiling</h3>
+                        <ul>
+                            <li>
+                                Analyzing threat activity specific to certain sectors to prepare targeted defenses.
+                            </li>
+                            <li>
+                                Example: Predicting ransomware campaigns against healthcare based on past incidents and dark web discussions.
+                            </li>
+                        </ul>
+                        <div class="d-block">
+                            <img src="images/services/Industry-Specific Threat Profiling.webp" alt="">
+                        </div>
+                    </li>
+                    <li class="dataCollection-item">
+                        <h3>Proactive Defense Measures</h3>
+                        <ul>
+                            <li>
+                                Enhancing defenses based on anticipated threats.
+                            </li>
+                            <li>
+                                Example: Deploying advanced endpoint detection and response (EDR) tools ahead of a predicted malware surge targeting remote workers.
+                            </li>
+                        </ul>
+                        <div class="d-block">
+                            <img src="images/services/Proactive Defense Measures.webp" alt="">
+                        </div>
+                    </li>
+                    <li class="dataCollection-item">
+                        <h3>Vulnerability Management</h3>
+                        <ul>
+                            <li>
+                                Prioritizing patch management for vulnerabilities most likely to be exploited.
+                            </li>
+                            <li>
+                                Example: Fast-tracking patches for a critical vulnerability after CTI indicates it is actively discussed on threat actor forums.
+                            </li>
+                        </ul>
+                        <div class="d-block">
+                            <img src="images/services/Vulnerability Management.webp" alt="">
+                        </div>
+                    </li>
+                    <li class="dataCollection-item">
+                        <h3>Incident Response Planning</h3>
+                        <ul>
+                            <li>
+                                Preparing for attacks before they occur by developing specific response playbooks.
+                            </li>
+                            <li>
+                                Example: Creating a response plan for ransomware attacks after observing similar incidents within your industry.
+                            </li>
+                        </ul>
+                        <div class="d-block">
+                            <img src="images/services/Incident Response Planning.webp" alt="">
+                        </div>
+                    </li>
+                    <li class="dataCollection-item">
+                        <h3>Supply Chain Risk Mitigation</h3>
+                        <ul>
+                            <li>
+                                Predicting threats to third-party vendors and taking action to secure dependencies.
+                            </li>
+                            <li>
+                                Example: Monitoring dark web forums for leaked credentials of a supply chain partner.
+                            </li>
+                        </ul>
+                        <div class="d-block">
+                            <img src="images/services/Supply Chain Risk Mitigation.webp" alt="">
+                        </div>
+                    </li>
+                    <li class="dataCollection-item">
+                        <h3>Strategic Risk Management</h3>
+                        <ul>
+                            <li>
+                                Aligning cybersecurity investments with predicted threats to optimize resource allocation. 
+                            </li>
+                            <li>
+                                Example: Focusing resources on securing cloud environments after CTI shows a trend in cloud service provider breaches.
+                            </li>
+                        </ul>
+                        <div class="d-block">
+                            <img src="images/services/Strategic Risk Management.webp" alt="">
+                        </div>
+                    </li>
+                    <li class="dataCollection-item">
+                        <h3>Reduced Downtime</h3>
+                        <ul>
+                            <li>
+                                Preemptive measures reduce the likelihood of successful attacks, minimizing disruption.
+                            </li>
+                        </ul>
+                        <div class="d-block">
+                            <img src="images/services/Reduced Downtime.webp" alt="">
+                        </div>
+                    </li>
+                    <li class="dataCollection-item">
+                        <h3>Cost Efficiency</h3>
+                        <ul>
+                            <li>
+                                Allocating resources based on forecasted threats avoids unnecessary spending on lower-priority risks.
+                            </li>
+                        </ul>
+                        <div class="d-block">
+                            <img src="images/services/Cost Efficiency.webp" alt="">
+                        </div>
+                    </li>
+                    <li class="dataCollection-item">
+                        <h3>Enhanced Incident Response</h3>
+                        <ul>
+                            <li>
+                                Preparedness through predictive intelligence leads to faster detection and resolution of threats.
+                            </li>
+                        </ul>
+                        <div class="d-block">
+                            <img src="images/services/Enhanced Incident Response.webp" alt="">
+                        </div>
+                    </li>
+                    <li class="dataCollection-item">
+                        <h3>Improved Stakeholder Confidence</h3>
+                        <ul>
+                            <li>
+                                Demonstrating foresight in cybersecurity reassures stakeholders of robust risk management.
+                            </li>
+                        </ul>
+                        <div class="d-block">
+                            <img src="images/services/Improved Stakeholder Confidence.webp" alt="">
+                        </div>
+                    </li>
+                </ul> -->
+            </section>
+            <section class="strategic">
+                <p>
+                    In order to unleash the predictive power of Cyber Threat Intelligence (CTI), organizations must integrate
+                    data collection, analysis, and actionable insights with advanced technologies and strategic
+                    approaches. Predictive CTI enables businesses to anticipate attacks, mitigate risks, and develop
+                    proactive defenses.
+                    Here is what we do to effectively harness the predictive capabilities of CTI:
+                </p>
+                <div>
+                    <strong>Continuously Build a Comprehensive Data Collection Framework</strong>
+                    <p>
+                        A robust data collection framework is the foundation for predictive CTI.
+                    </p>
+                </div>
+                <div>
+                    <strong>Analyze Adversary TTPs (Tactics, Techniques, and Procedures)</strong>
+                    <p>
+                        Studying adversary behavior enhances predictive capabilities by uncovering likely attack patterns.
+                    </p>
+                </div>
+                <div>
+                    <strong>Employ Advanced Machine Learning (ML) Models</strong>
+                    <p>
+                        AI and ML amplify CTI by automating data analysis and identifying patterns that human analysts might
+                        miss.
+                        Key actions include developing predictive models, detecting anomalies and correlating threat
+                        indicators.
+                    </p>
+                </div>
+                <div>
+                    <strong>Focus on Vulnerability Prioritization</strong>
+                    <p>
+                        Proactively addressing vulnerabilities likely to be exploited ensures readiness against impending threats. The best way to achieve this is by using predictive vulnerability scoring and monitoring exploit chatter.
+                    </p>
+                </div>
+                <div>
+                    <strong>Harness Real-Time Intelligence and Alerts</strong>
+                    <p>
+                        Timely information enables swift defensive actions.
+                        Key steps to achieve this include setting up alerts for emerging threats or specific indicators, as well as monitoring geopolitical trends. It is crucial to correlate cyber threats with global political and economic events to predict nation-state actions.
+                    </p>
+                </div>
+                <div>
+                    <strong>Create Actionable Intelligence</strong>
+                    <p>
+                        Predictive power is maximized when insights are actionable and aligned with business goals.
+                        The best way to accomplish this is by aligning intelligence with risk management, tailoring the insights to the organization’s assets, sectors, and threat models.
+                        Another step is by delivering intelligence reports with context, such as likely attack methods, expected timelines, and recommendations.
+                    </p>
+                </div>
+                <div>
+                    <strong>Foster Collaboration and Intelligence Sharing</strong>
+                    <p>
+                        Collaborative efforts enhance predictive capabilities by pooling intelligence from multiple sources.
+                        Participation in Threat Sharing Communities in this case is crucial, to share information with industry peers to organize collective defense against any active campaigns.
+                    </p>
+                </div>
+                <div>
+                    <strong>Visualization and Reporting</strong>
+                    <p>
+                        Visualizing intelligence makes complex data more accessible for decision-making.
+                        We emphasize the importance of creating real-time visualizations of threat trends and predictions - to communicate the insights clearly. 
+                    </p>
+                </div>
+                <div>
+                    <strong>Continuously Evaluate and Evolve</strong>
+                    <p>
+                        Cyber threats evolve rapidly, and CTI strategies must adapt to stay effective.
+                        In order to achieve that there are two important processes to consider and implement; 
+                        first, it is crucial to review prediction accuracy by comparing predicted threats to actual incidents and refining models accordingly. And second, to incorporate feedback loops by using feedback from security teams to improve intelligence processes.
+                        By allowing us to implement these strategies for them, organizations can transition from reactive defenses to proactive, predictive security, gaining a decisive advantage in the ever-evolving threat landscape. 
+                    </p>
+                </div>
+                <a href="/" class="btn-primary1">Go Back</a>
+            </section>
         </div>
     </main>
     <footer class="footer"></footer>

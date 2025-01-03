@@ -222,6 +222,13 @@ $(document).ready(function () {
       "background-position": `center ${scrollPosition * 0.5}px`, // Parallax speed
     });
   });
+  $(document).on('click', '.footer a', function (e) {
+    e.preventDefault();
+    console.log('Footer link clicked');
+    const hash = $(this).attr('href');
+    window.location.href = `/${hash}`;
+  });
+
 });
 
 

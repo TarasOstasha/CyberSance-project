@@ -66,6 +66,11 @@
   .counter li {
     text-align: center;
   }
+  .advancedAnalysis {
+    .dataCollection:after {
+      top: 4%;
+  }
+  }
 }
 
 // services
@@ -80,6 +85,12 @@
 
   .services-lit li div {
     margin-bottom: 20px;
+  }
+  .strategic {
+    background-size: contain;
+  }
+  .dataCollection:after {
+    display: none;
   }
 }
 
@@ -183,9 +194,38 @@
   .nav-logo {
     width: 30%;
     img {
-      width: 100% !important;
-      -webkit-width: 100% !important; /* Webkit-specific prefix */
+      //width: 100% !important;
+      //-webkit-width: 100% !important; /* Webkit-specific prefix */
     }
+  }
+}
+
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+  .hero-svg-right-bottom,
+  .hero-svg-left-bottom,
+  .hero-svg-left-top,
+  .hero-svg-right-top {
+    display: none;
+  }
+  .label {
+    font-size: 1.5rem;
+  }
+  .hero-title {
+    font-size: 4.5rem;
+    -webkit-font-size: 5.5rem; /* Webkit-specific prefix */
+  }
+  .hero-subtitle {
+    font-size: 3.5rem;
+    -webkit-font-size: 3.5rem; /* Webkit-specific prefix */
+  }
+  .nav-logo {
+    width: 80%;
+  }
+  .mission p {
+    max-width: 100%;
+  }
+  .services-list li {
+    flex-direction: column;
   }
 }
 

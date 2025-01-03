@@ -1,72 +1,4 @@
-// .hero-section {
-//   height: 100%;
-//   max-height: 450px;
-//   background-image: url('../images/hero//phoenix.svg');
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   background-size: initial;
-//   padding: 365px 0;
-//   position: relative;
 
-//   .hero-title {
-//     font-family: 'jsMath-cmr10';
-//     font-size: 7.5rem;
-//     font-weight: 400; /* Bold font */
-//     text-transform: uppercase;
-//     margin: 0;
-//     // line-height: 1.2; /* Line spacing */
-//   }
-
-//   .cybersance {
-//     color: #fff; /* Default color for "CYBERS" */
-//   }
-
-//   .cybersance .accent {
-//     color: #e63946; /* Red color for "ANCE" */
-//   }
-
-//   .hero-subtitle {
-//     font-size: 4rem; /* Slightly smaller than "CYBERSANCE" */
-//     font-weight: 500; /* Regular weight for "AI-Driven-CTI" */
-//     color: #fff; /* Default color */
-//   }
-
-//   .ai-drivern .accent {
-//     color: #e63946; /* Red color for "-CTI" */
-//   }
-//   .hero-svg-left-top {
-//     position: absolute;
-//     top: 0;
-//     left: 10%;
-//     height: 46%;
-//   }
-//   .hero-svg-right-top {
-//     position: absolute;
-//     top: 0;
-//     right: 0;
-//   }
-//   .hero-svg-left-bottom {
-//     position: absolute;
-//     left: 10%;
-//     bottom: 0;
-//     height: 46%;
-//   }
-//   .hero-svg-right-bottom {
-//     position: absolute;
-//     right: 0;
-//     bottom: 0;
-//   }
-//   .phoenix {
-//     width: 100%;
-//   }
-//   .hero-decorations {
-//     margin: 0 auto;
-//   }
-//   .text-center {
-//     // position: absolute;
-//     line-height: 0.5;
-//   }
-// }
 
 :root {
   --main-font-family: 'jsMath-cmr10';
@@ -88,7 +20,7 @@
 .hero-title {
   //font-family: 'jsMath-cmr10';
   font-size: 8.5rem;
-  background: linear-gradient(to right, #fff, #db1f28);
+  background: linear-gradient(to right, #fff, @main-color);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   line-height: 1;
@@ -98,7 +30,7 @@
   //font-family: 'jsMath-cmr10';
   font-size: 4.5rem;
   font-weight: 500;
-  background: linear-gradient(to right, #fff, #db1f28);
+  background: linear-gradient(to right, #fff, @main-color);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -121,7 +53,7 @@
 .phoenix::before, .phoenix::after { 
   content: '';
     width: 100%;
-    border-bottom: solid 1px red;
+    border-bottom: solid 1px @main-color;
     position: absolute;
     left: 0;
     top: 50%;
@@ -212,7 +144,7 @@
   text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.8);
 }
 .sance {
-  color: red;
+  color: @main-color;
   //text-shadow: 2px 2px 8px rgba(255, 0, 0, 0.8);
 }
 
